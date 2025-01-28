@@ -9,7 +9,7 @@ function Navbar() {
                 className="w-full md:w-5/6 xl:w-4/6 2xl:w-1/2 md:h-[60px] bg-violet-100 text-violet-600 
                 flex justify-between items-center py-6 rounded-[90px] md:rounded-[10px] 
                 fixed z-10 top-0 left-1/2 transform -translate-x-1/2 md:pl-[30px] md:pr-[30px] mt-[3dvh] 
-                shadow-lg"
+                shadow-lg "
             >
                 <Link
                     to="/home"
@@ -20,7 +20,7 @@ function Navbar() {
                         alt="Logo"
                         className="h-20 w-20 transition-transform duration-300 ease-in-out transform hover:scale-110"
                     />
-                    Home
+                    
                 </Link>
 
                 <div className="flex gap-4 text-base font-light items-center">

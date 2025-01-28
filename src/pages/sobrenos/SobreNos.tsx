@@ -1,7 +1,7 @@
 function SobreNos() {
     return (
         <>
-            <div className="flex flex-col items-center justify-center m-auto p-15 bg-violet-400/25">
+            <div className="flex flex-col items-center justify-center m-auto p-15 bg-violet-400/25 mt-30">
                 <h1 className="text-5xl font-bold text-center my-10">Sobre nós</h1>
                 <div className="flex justify-center">
                     <p className="text-xl w-xl pr-24">
