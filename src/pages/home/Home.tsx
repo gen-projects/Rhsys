@@ -4,7 +4,7 @@ function Home() {
     console.log("Home carregada!!")
     return (
         <>
-            <div className="bg-violet-400/25 flex justify-center">
+            <div className="bg-violet-400/25 flex justify-center pt-30">
                 <div className="flex flex-col gap-4 items-center justify-center py-4">
                     <h2 className="text-5xl font-bold">
                         RHsys

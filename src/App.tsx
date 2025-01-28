@@ -3,7 +3,7 @@ import "./App.css";
 import Produto from "./pages/produto/Produto";
 import Footer from './components/footer/Footer'
 import Home from './pages/home/Home'
-import SobreNos from './components/sobrenos/SobreNos'
+import SobreNos from './pages/sobrenos/SobreNos'
 import Navbar from './components/Navbar/Navbar'
 
 
@@ -18,8 +18,9 @@ function App() {
         <div className='min-h-[88.7dvh]'>
           <Routes>
             <Route path="/" element={<Home/>} />     
+            <Route path="/home" element={<Home/>} />     
             <Route path="/sobrenos" element={<SobreNos />} />
-            <Route path="/produto" element={<Produto />} />
+            <Route path="/produtos" element={<Produto />} />
           </Routes>
         </div>
         <Footer/>

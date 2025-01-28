@@ -20,7 +20,7 @@ function Navbar() {
                         alt="Logo"
                         className="h-20 w-20 transition-transform duration-300 ease-in-out transform hover:scale-110"
                     />
-                    Home
+                    
                 </Link>
 
                 <div className="flex gap-4 text-base font-light items-center">
