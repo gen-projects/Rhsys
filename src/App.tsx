@@ -1,20 +1,19 @@
-import { BrowserRouter, Routes } from 'react-router-dom'
-import './App.css'
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import "./App.css";
+import Produto from "./pages/produto/Produto";
 
 function App() {
-
-
   return (
     <>
       <BrowserRouter>
-        <Routes>
-          <div className='min-h-[88.7dvh]'>
-            
-          </div>
-        </Routes>
+        <div className="min-h-[88.7dvh]">
+          <Routes>
+            <Route path="/produto" element={<Produto />} />
+          </Routes>
+        </div>
       </BrowserRouter>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
