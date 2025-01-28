@@ -15,7 +15,7 @@ function App() {
     <>
       <BrowserRouter>
         <Navbar />
-        <div className='min-h-[88.7dvh]'>
+        <div className='min-h-[84.7dvh]'>
           <Routes>
             <Route path="/" element={<Home/>} />     
             <Route path="/home" element={<Home/>} />     
