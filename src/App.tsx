@@ -1,5 +1,6 @@
-import { BrowserRouter, Routes } from 'react-router-dom'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import './App.css'
+import Home from './pages/home/Home'
 
 function App() {
 
@@ -7,11 +8,11 @@ function App() {
   return (
     <>
       <BrowserRouter>
-        <Routes>
-          <div className='min-h-[88.7dvh]'>
-            
-          </div>
-        </Routes>
+        <div className='min-h-[88.7dvh]'>
+          <Routes>
+            <Route path="/" element={<Home/>} />
+          </Routes>
+        </div>
       </BrowserRouter>
     </>
   )
