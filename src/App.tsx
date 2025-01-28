@@ -3,7 +3,7 @@ import "./App.css";
 import Produto from "./pages/produto/Produto";
 import Footer from './components/footer/Footer'
 import Home from './pages/home/Home'
-import SobreNos from './pages/sobrenos/SobreNos
+import SobreNos from './pages/sobrenos/SobreNos'
 import Navbar from './components/Navbar/Navbar'
 
 
