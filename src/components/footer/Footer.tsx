@@ -20,7 +20,7 @@ function Footer() {
               href="https://www.linkedin.com/school/generationbrasil/posts/?feedView=all"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-300 hover:text-white transition"
+              className="text-gray-100 hover:text-white transition hover:scale-105"
             >
               <LinkedinLogo size={48} weight="bold" />
             </a>
@@ -28,7 +28,7 @@ function Footer() {
               href="https://www.instagram.com/generationbrasil/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-300 hover:text-white transition"
+              className="text-gray-100 hover:text-white transition hover:scale-105"
             >
               <InstagramLogo size={48} weight="bold" />
             </a>
@@ -36,7 +36,7 @@ function Footer() {
               href="https://web.facebook.com/generationbrasil"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-300 hover:text-white transition"
+              className="text-gray-100 hover:text-white transition hover:scale-105"
             >
               <FacebookLogo size={48} weight="bold" />
             </a>

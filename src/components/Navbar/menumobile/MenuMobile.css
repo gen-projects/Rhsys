@@ -7,9 +7,9 @@
 }
 
 .bg-menu{
-    background-image: url('../../../assets/images/menu.svg');
+    background-image: url('../../../assets/image/rhsys.png');
     height: 20px;
-    width: auto;
+    width: 20px;
 }
 
 [role=tooltip].popup-content{
@@ -30,7 +30,6 @@
 
 .menu-interno{
     height: 420px;
-    opacity: 80%;
     
 }
 

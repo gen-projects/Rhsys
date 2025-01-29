@@ -4,7 +4,7 @@ import './MenuMobile.css';
 
 const Menu = () => {
   return (
-    <div className="menu z-10">
+    <div className="menu bg-menu z-10">
       <Popup
         trigger={
           <div className="menu-item">
@@ -21,7 +21,7 @@ const Menu = () => {
         className=".popup-content"
       >
         <div
-          className="menu menu-interno md:hidden bg-violet-400/25 text-white backdrop-blur-lg 
+          className="menu menu-interno md:hidden  bg-violet-300/50  text-white backdrop-blur-xl
                    w-[90vw] left-5 sm:left-7 top-20  rounded-[15px] flex flex-col content-center 
                   justify-between py-10 px-5 gap-15 h-[60dvh] text-base fixed font-extralight mt-3"
         >
@@ -34,28 +34,19 @@ const Menu = () => {
             </div>
 
             <div className="menu-item">
-              <Link to="/produtos" className=" hover:underline flex gap-10">
+              <Link to="/funcionarios" className=" hover:underline flex gap-10">
                 <span>02</span>
-                <span>Produtos</span>
+                <span>Funcionarios</span>
               </Link>
             </div>
 
             <div className="menu-item ">
-              <Link to="/categorias" className=" hover:underline flex gap-10">
+              <Link to="/sobre" className=" hover:underline flex gap-10">
                 <span>03</span>
-                <span>Categorias</span>
+                <span>Sobre nós</span>
               </Link>
             </div>
 
-            <div className="menu-item">
-              <Link
-                to="/cadastrarcategoria"
-                className=" hover:underline flex gap-10"
-              >
-                <span>04</span>
-                <span>Cadastrar Categoria</span>
-              </Link>
-            </div>
           </div>
         </div>
       </Popup>
