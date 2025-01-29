@@ -1,30 +1,36 @@
 import CardFuncionario from "../cardfuncionario/CardFuncionario";
-import './BoxFuncionarios.css';
+import "./BoxFuncionarios.css";
 
-function BoxFuncionarios() {
+interface Funcionario {
+  nome: string;
+  cargo: string;
+}
+
+interface BoxFuncionariosProps {
+  funcionarios: Funcionario[];
+  searchQuery: string;
+  filter: string;
+}
+
+function BoxFuncionarios({
+  funcionarios,
+  searchQuery,
+  filter,
+}: BoxFuncionariosProps) {
+  const filteredFuncionarios = funcionarios.filter(({ nome, cargo }) => {
+    const matchesSearch = nome
+      .toLowerCase()
+      .includes(searchQuery.toLowerCase());
+    const matchesFilter = filter === "Todos" || cargo.includes(filter);
+    return matchesSearch && matchesFilter;
+  });
+
   return (
     <div className="p-10 bg-violet-300/75 rounded-lg w-full h-full scrollable">
-      <div className="flex flex-wrap gap-5 justify-start">
-        <CardFuncionario nome={"Carlos"} cargo={"Frontend Developer"} />
-        <CardFuncionario nome={"Maria Aparecida"} cargo={"Backend Developer"} />
-        <CardFuncionario nome={"Julia Dias Nobre"} cargo={"Product Owner"} />
-        <CardFuncionario nome={"Henrique Santos Lima"} cargo={"Frontend Developer"} />
-        <CardFuncionario nome={"Carlos"} cargo={"Frontend Developer"} />
-        <CardFuncionario nome={"Carlos"} cargo={"Frontend Developer"} />
-        <CardFuncionario nome={"Maria Aparecida"} cargo={"Backend Developer"} />
-        <CardFuncionario nome={"Julia Dias Nobre"} cargo={"Product Owner"} />
-        <CardFuncionario nome={"Henrique Santos Lima"} cargo={"Frontend Developer"} />
-        <CardFuncionario nome={"Carlos"} cargo={"Frontend Developer"} />
-        <CardFuncionario nome={"Carlos"} cargo={"Frontend Developer"} />
-        <CardFuncionario nome={"Maria Aparecida"} cargo={"Backend Developer"} />
-        <CardFuncionario nome={"Julia Dias Nobre"} cargo={"Product Owner"} />
-        <CardFuncionario nome={"Henrique Santos Lima"} cargo={"Frontend Developer"} />
-        <CardFuncionario nome={"Carlos"} cargo={"Frontend Developer"} />
-        <CardFuncionario nome={"Carlos"} cargo={"Frontend Developer"} />
-        <CardFuncionario nome={"Maria Aparecida"} cargo={"Backend Developer"} />
-        <CardFuncionario nome={"Julia Dias Nobre"} cargo={"Product Owner"} />
-        <CardFuncionario nome={"Henrique Santos Lima"} cargo={"Frontend Developer"} />
-        <CardFuncionario nome={"Carlos"} cargo={"Frontend Developer"} />
+      <div className="flex flex-wrap gap-5 justify-start mt-4">
+        {filteredFuncionarios.map(({ nome, cargo }, index) => (
+          <CardFuncionario key={index} nome={nome} cargo={cargo} />
+        ))}
       </div>
     </div>
   );
